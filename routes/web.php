@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- Route::get('/', function () {
-     return view('welcome');
- });
-Route::get('/abc',[Controller::class,'mainpage']);
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/',[Controller::class,'mainpage']);
 
 
 /*------------------------------------------
