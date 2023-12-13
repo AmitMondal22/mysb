@@ -27,7 +27,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="{{ asset('assets/customer') }}/login_template/css/style.css" />
 
-    <title>Parking || Sign In</title>
+    <title>Sign In</title>
 
 
 
