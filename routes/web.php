@@ -54,5 +54,11 @@ Route::middleware(['auth', 'user-access:manager'])->group(function () {
 
 Route::prefix('customer')->group(function () {
     Route::get('/blank',[CustomerAuth::class, 'blank'])->name('blank');
+    Route::prefix('auth')->group(function () {
+        Route::get('/login',[CustomerAuth::class, 'login'])->name('c_login');
+    });
+
+
+
     Route::get('/',[CustomerAuth::class, 'index'])->name('home');
 });

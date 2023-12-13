@@ -16,4 +16,8 @@ class CustomerAuth extends Controller
     function blank(): View{
         return view('customer.blank');
     }
+
+    function login(): View{
+        return view('customer.auth.login');
+    }   
 }

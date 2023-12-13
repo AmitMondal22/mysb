@@ -54,7 +54,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <lottie-player src="/lottiefiles/1701683407794.json" background="transparent"  speed="1"  loop autoplay class="img-fluid"></lottie-player>
+            <lottie-player src="/lottiefiles/1702483513742.json" background="transparent"  speed="1"  loop autoplay class="img-fluid"></lottie-player>
             <!-- <img
               src="{{ asset('assets/customer') }}/login_template/images/undraw_remotely_2j6y.svg"
               alt="Image"
@@ -70,12 +70,12 @@
                 <form action="/login" method="post" id="myForm">
                   <div class="form-group first mb-4">
                     <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" value="1234567890" required/>
+                    <input type="text" class="form-control" id="username" name="username" value="" required/>
 
                   </div>
                   <div class="form-group last mb-4">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" value="1" required/>
+                    <input type="password" class="form-control" id="password" name="password" value="" required/>
                   </div>
 
 
@@ -102,26 +102,6 @@
 
 
 
-    <!-- ========================== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
-
-<% if (error.length > 0) { %>
-  <script>
-    toastr.error('<%= error %>')
-  </script>
-<% } else if (success.length > 0) { %>
-  <script>
-    toastr.success('<%= success %>')
-  </script>
-<% }else if (info.length > 0) { %>
-  <script>
-    toastr.info('<%= info %>')
-  </script>
-<% }else if (warning.length > 0) { %>
-  <script>
-    toastr.warning('<%= warning %>')
-  </script>
-<% } %>
 
 
 
