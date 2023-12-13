@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\customer\Web\CustomerAuth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,4 +52,7 @@ Route::middleware(['auth', 'user-access:manager'])->group(function () {
     Route::get('/manager/home', [HomeController::class, 'managerHome'])->name('manager.home');
 });*/
 
-
+Route::prefix('customer')->group(function () {
+    Route::get('/blank',[CustomerAuth::class, 'blank'])->name('blank');
+    Route::get('/',[CustomerAuth::class, 'index'])->name('home');
+});
