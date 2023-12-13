@@ -39,8 +39,6 @@ class UserAuth extends ResponceBaseController
         return response()->json("xfbvjfd");
     }
 
-
-
     public function login_web(Request $request): RedirectResponse
     {
         $input = $request->all();
