@@ -54,7 +54,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <lottie-player src="/lottiefiles/1702483513742.json" background="transparent"  speed="1"  loop autoplay class="img-fluid"></lottie-player>
+            <lottie-player src="{{ asset('/lottiefiles/1702483513742.json') }}" background="transparent"  speed="1"  loop autoplay class="img-fluid"></lottie-player>
             <!-- <img
               src="{{ asset('assets/customer') }}/login_template/images/undraw_remotely_2j6y.svg"
               alt="Image"
